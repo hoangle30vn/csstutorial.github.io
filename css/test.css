@@ -5,14 +5,14 @@ body {
     background-repeat: no-repeat;
     background-position: top left;
     background-attachment: fixed;
-    background-size: 7vw 10vh;
+    background-size: 100px 80px;
     animation: mymove 10s infinite;
 }
 
 @keyframes mymove {
     50% {
-        background-size: 70vw 100vh;
-        background-position: top right;
+        background-size: 250px 200px;
+        background-position: top center;
         background-color: rgb(99, 192, 103);
     }
 }
@@ -23,6 +23,29 @@ body {
     color: rgb(16, 0, 255);
     /* border: 15px solid stretch; */
     /* background-color: teal; */
+}
+
+#grumpy {
+    z-index: -1;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    animation: mymovegrumpy 5s infinite;
+}
+
+@keyframes mymovegrumpy {
+    30% {
+        z-index: -1;
+        position: absolute;
+        top: 16px;
+        right: 24px;
+    }
+    60% {
+        z-index: -1;
+        position: absolute;
+        top: 16px;
+        right: 9px;
+    }
 }
 
 #hoangle {
