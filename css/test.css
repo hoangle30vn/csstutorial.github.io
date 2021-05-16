@@ -30,10 +30,10 @@ body {
     position: absolute;
     top: 8px;
     right: 16px;
-    animation: mymovegrumpy 5s infinite;
+    animation: movegrumpy 5s infinite;
 }
 
-@keyframes mymovegrumpy {
+@keyframes movegrumpy {
     30% {
         z-index: -1;
         position: absolute;
