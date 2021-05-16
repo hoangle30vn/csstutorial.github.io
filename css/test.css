@@ -19,7 +19,18 @@ body {
 
 .div {
     text-align: center;
-    margin-top: 40vh;
+    margin-top: 30vh;
+    color: rgb(16, 0, 255);
     /* border: 15px solid stretch; */
     /* background-color: teal; */
+}
+
+#hoangle {
+    margin: auto;
+    font-size: 70px;
+}
+
+#front-end {
+    margin: auto;
+    font-size: 40px;
 }
