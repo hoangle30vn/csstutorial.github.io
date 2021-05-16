@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-position: top left;
     background-attachment: fixed;
-    background-size: 5vw 10vh;
+    background-size: 7vw 10vh;
     animation: mymove 10s infinite;
 }
 
@@ -18,9 +18,8 @@ body {
 }
 
 .div {
-    height: 100px;
-    width: 100px;
-    border: 15px solid stretch;
-    background-color: teal;
-    border-image: url(./img/badge_web_pre-reg_vi_vn.8986227a.png);
+    text-align: center;
+    margin-top: 40vh;
+    /* border: 15px solid stretch; */
+    /* background-color: teal; */
 }
