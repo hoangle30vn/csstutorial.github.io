@@ -19,15 +19,16 @@ body {
 }
 
 .div {
+    outline: 17px ridge #5167d2;
+    outline-offset: 1px;
     text-align: center;
     margin-top: 30vh;
-    border: 15px outset #004bf3;
+    border: 15px outset #7557d2;
     width: 50%;
     margin-right: auto;
     margin-left: auto;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     color: rgb(16, 0, 255);
-    /* border: 15px solid stretch; */
     /* background-color: teal; */
 }
 
@@ -64,6 +65,7 @@ body {
     margin: auto;
     font-size: 70px;
     font-weight: bold;
+    text-shadow: 3px 3px 15px rgb(43, 189, 233);
 }
 
 #front-end {
@@ -114,13 +116,15 @@ body {
         font-weight: bold;
     }
     .div {
+        outline: 7px ridge #5167d2;
+        outline-offset: 1px;
         text-align: center;
         margin-top: 30vh;
         border: 5px outset #004bf3;
         width: 50%;
         margin-right: auto;
         margin-left: auto;
-        border-radius: 8px;
+        /* border-radius: 8px; */
         color: rgb(16, 0, 255);
         /* border: 15px solid stretch; */
         /* background-color: teal; */
@@ -165,4 +169,31 @@ body {
             left: 9px;
         }
     }
+}
+
+.butt {
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.buttTroll {
+    /* z-index: 999; */
+    position: absolute;
+    width: 100%;
+    height: 40%;
+}
+
+#buttdep {
+    top: 20px;
+    left: 40vw;
+    position: absolute;
+}
+
+#buttxau {
+    top: 20px;
+    right: 40vw;
+    position: absolute;
 }
