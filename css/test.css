@@ -1,18 +1,19 @@
 body {
     background-color: rgb(155, 238, 234);
     opacity: 0.7;
-    background-image: url(./img/pengu-dd6ecdb71cb2f584a606268ffdda19fb\ \(1\).png);
+    background-image: url(./img/backdrop-mobile-5b1307256a416ea809385b5f3c0cd6ff.jpg);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: bottom left;
     background-attachment: fixed;
-    background-size: 100px 80px;
+    background-size: 100%;
+    /* background-size: 250px 200px; */
     animation: mymove 10s infinite;
 }
 
 @keyframes mymove {
     50% {
-        background-size: 250px 200px;
-        background-position: top center;
+        /* background-size: 250px 200px; */
+        /* background-position: bottom right; */
         background-color: rgb(99, 192, 103);
     }
 }
@@ -20,6 +21,11 @@ body {
 .div {
     text-align: center;
     margin-top: 30vh;
+    border: 15px outset #004bf3;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
     color: rgb(16, 0, 255);
     /* border: 15px solid stretch; */
     /* background-color: teal; */
@@ -30,6 +36,8 @@ body {
     position: absolute;
     top: 8px;
     right: 16px;
+    width: 20%;
+    height: auto;
     animation: movegrumpy 5s infinite;
 }
 
@@ -38,12 +46,16 @@ body {
         z-index: -1;
         position: absolute;
         top: 16px;
+        width: 20%;
+        height: auto;
         right: 24px;
     }
     60% {
         z-index: -1;
         position: absolute;
         top: 16px;
+        width: 20%;
+        height: auto;
         right: 9px;
     }
 }
@@ -56,4 +68,36 @@ body {
 #front-end {
     margin: auto;
     font-size: 40px;
+}
+
+#golem {
+    z-index: -1;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    width: 20%;
+    height: auto;
+}
+
+#golem:hover {
+    animation: movegolem 4s infinite;
+}
+
+@keyframes movegolem {
+    30% {
+        z-index: -1;
+        position: absolute;
+        top: 16px;
+        width: 21%;
+        height: auto;
+        left: 24px;
+    }
+    60% {
+        z-index: -1;
+        position: absolute;
+        top: 16px;
+        width: 22%;
+        height: auto;
+        left: 9px;
+    }
 }
