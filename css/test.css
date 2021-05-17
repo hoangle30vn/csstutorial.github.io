@@ -63,11 +63,13 @@ body {
 #hoangle {
     margin: auto;
     font-size: 70px;
+    font-weight: bold;
 }
 
 #front-end {
     margin: auto;
     font-size: 40px;
+    font-weight: bold;
 }
 
 #golem {
@@ -88,7 +90,6 @@ body {
         z-index: -1;
         position: absolute;
         top: 16px;
-        width: 21%;
         height: auto;
         left: 24px;
     }
@@ -96,8 +97,72 @@ body {
         z-index: -1;
         position: absolute;
         top: 16px;
-        width: 22%;
         height: auto;
         left: 9px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #hoangle {
+        margin: auto;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #front-end {
+        margin: auto;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .div {
+        text-align: center;
+        margin-top: 30vh;
+        border: 5px outset #004bf3;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 8px;
+        color: rgb(16, 0, 255);
+        /* border: 15px solid stretch; */
+        /* background-color: teal; */
+    }
+    #grumpy {
+        width: 35%;
+        animation: movegrumpy 5s infinite;
+    }
+    @keyframes movegrumpy {
+        30% {
+            z-index: -1;
+            position: absolute;
+            top: 10px;
+            width: 35%;
+            height: auto;
+            right: 24px;
+        }
+        60% {
+            z-index: -1;
+            position: absolute;
+            top: 10px;
+            width: 35%;
+            height: auto;
+            right: 9px;
+        }
+    }
+    #golem {
+        z-index: -1;
+        position: absolute;
+        top: 300px;
+        left: 16px;
+        width: 40%;
+        height: auto;
+    }
+    @keyframes movegolem {
+        30% {
+            top: 310px;
+            left: 24px;
+        }
+        60% {
+            top: 310px;
+            left: 9px;
+        }
     }
 }
