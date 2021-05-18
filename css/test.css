@@ -18,15 +18,23 @@ body {
     }
 }
 
+.contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+
 .div {
+    /* ---------------------- */
     outline: 17px ridge #5167d2;
     outline-offset: 1px;
     text-align: center;
-    margin-top: 30vh;
     border: 15px outset #7557d2;
     width: 50%;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
     /* border-radius: 8px; */
     color: rgb(16, 0, 255);
     /* background-color: teal; */
@@ -171,29 +179,11 @@ body {
     }
 }
 
-.butt {
-    position: absolute;
-    display: block;
-    text-align: center;
-    width: 100%;
+.butt button {
     margin-top: 20px;
-}
-
-.buttTroll {
-    /* z-index: 999; */
-    position: absolute;
-    width: 100%;
-    height: 40%;
-}
-
-#buttdep {
-    top: 20px;
-    left: 40vw;
-    position: absolute;
-}
-
-#buttxau {
-    top: 20px;
-    right: 40vw;
-    position: absolute;
+    display: block;
+    color: rgb(255, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
 }
