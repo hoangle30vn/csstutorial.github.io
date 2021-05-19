@@ -70,6 +70,12 @@ body {
 }
 
 #hoangle {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
     margin: auto;
     font-size: 70px;
     font-weight: bold;
@@ -77,6 +83,12 @@ body {
 }
 
 #front-end {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
     margin: auto;
     font-size: 40px;
     font-weight: bold;
@@ -116,10 +128,22 @@ body {
     #hoangle {
         margin: auto;
         font-size: 30px;
+        -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE 10 and IE 11 */
+        user-select: none;
+        /* Standard syntax */
         font-weight: bold;
     }
     #front-end {
         margin: auto;
+        -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE 10 and IE 11 */
+        user-select: none;
+        /* Standard syntax */
         font-size: 20px;
         font-weight: bold;
     }
@@ -132,6 +156,12 @@ body {
         width: 50%;
         margin-right: auto;
         margin-left: auto;
+        -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE 10 and IE 11 */
+        user-select: none;
+        /* Standard syntax */
         /* border-radius: 8px; */
         color: rgb(16, 0, 255);
         /* border: 15px solid stretch; */

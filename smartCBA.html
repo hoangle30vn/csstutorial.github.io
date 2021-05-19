@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SMART CBA</title>
+    <link rel="stylesheet" href="./assetsCBA/css/smartcba.css">
+    <link rel="stylesheet" href="./assetsCBA/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assetsCBA/css/bootstrapSelect.min.css">
+    <link rel="stylesheet" href="./assetsCBA/css/fontAwesome/all.min.css">
+    <script src="./assetsCBA/js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="navbarMenu">
+            <div class="smartCBA">
+                <h2><b>SMART CBA</b></h2>
+            </div>
+            <ul>
+                <li>
+                    <a href="#home"><i style="font-size: x-large    ; color: white;" class="fas fa-home"> Home</i></a>
+                    <!-- <a href="#home"><img src="./assetsCBA/img/iconHome.png" alt="home" style="height: 20px;"> Dashboard</a> -->
+                </li>
+                <li>
+                    <a class="active" href="#report"><i style="font-size: x-large    ; color: white;" class="fas fa-chart-line"> Report</i></a>
+                    <!-- <a href="#home"><img src="./assetsCBA/img/iconHome.png" alt="home" style="height: 20px;"> Dashboard</a> -->
+                </li>
+                <li>
+                    <a href="#heatmap"><i style="font-size: x-large    ; color: white;" class="fas fa-map-marked-alt"> Heat Map</i></a>
+                    <!-- <a href="#home"><img src="./assetsCBA/img/iconHome.png" alt="home" style="height: 20px;"> Dashboard</a> -->
+                </li>
+            </ul>
+        </div>
+        <div class="report">
+            <div>
+                <div class="information">
+                    <h2><b>Reports </b></h2>
+                    <p id="infor"> <b> Hello, Hoang Le</b> <img style="height: 60px; border-radius: 50%;" src="./assetsCBA/img/hoang.jpg" alt="i'm hoang"></p>
+                </div>
+                <div class="space"></div>
+                <div class="time">
+
+                    <table>
+                        <tr>
+                            <th>from</th>
+                            <th>to</th>
+                            <th>store</th>
+                        </tr>
+                        <tr>
+                            <td class="tdTable"><input type="date" class="dateBorder"></td>
+                            <td class="tdTable"><input type="date" class="dateBorder"></td>
+                            <td>
+                                <select id="store">
+                                    <option>store</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <button style="margin-top: 40px;" type="button" id="okay" class="btn btn-success">Okay</button>
+
+                </div>
+                <div class="trend">
+                    <div style="flex-grow: 6" class="hightChart">
+                        <figure class="highcharts-figure">
+                            <div id="containerChart"></div>
+                            <!-- <p class="highcharts-description">
+                            Basic line chart showing trends in a dataset. This chart includes the
+                            <code>series-label</code> module, which adds a label to each line for enhanced readability.
+                        </p> -->
+                        </figure>
+                    </div>
+                    <div style="flex-grow: 4" class="dalyTrend">
+                        <h1 style=" margin-top: 10px; ">DALY TREND</h1>
+                        <table id="tableDalyTrend">
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Last month</th>
+                                    <th>This month</th>
+                                    <th>Changes</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableDalyTrendList">
+                                <tr class="tableTrThis">
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="reportAll">
+                    <h1>REPORT ALL STORE</h1>
+                    <table id="tableAll">
+                        <thead>
+                            <tr>
+                                <th>.No</th>
+                                <th>Store</th>
+                                <th>Total Visitor</th>
+                                <th>Visit Duration</th>
+                                <th>Total Customer</th>
+                                <th>Returning Customer</th>
+                                <th>Cross Shopping</th>
+                                <th>Sale Convertion</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableAllList">
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer style="height: 100px; padding: 1em; background-color: rgb(137, 90, 20);">
+        <center>
+            <h2>xin chào đây là Lê Việt Hoàng</h2>
+            <i class="fas fa-arrow-up">Hoang</i>
+        </center>
+    </footer>
+
+    <script src="assetsCBA/hightChart/highcharts.js"></script>
+    <script src="assetsCBA/hightChart/exporting.js"></script>
+    <script src="assetsCBA/hightChart/export-data.js"></script>
+    <script src="assetsCBA/hightChart/accessibility.js"></script>
+    <script src="assetsCBA/hightChart/series-label.js"></script>
+    <script src="./assetsCBA/js/smartcba.js"></script>
+
+</body>
+
+</html>
