@@ -151,11 +151,9 @@ body {
         outline: 7px ridge #5167d2;
         outline-offset: 1px;
         text-align: center;
-        margin-top: 30vh;
+        /* margin-top: 30vh; */
         border: 5px outset #004bf3;
         width: 50%;
-        margin-right: auto;
-        margin-left: auto;
         -webkit-user-select: none;
         /* Safari */
         -ms-user-select: none;
