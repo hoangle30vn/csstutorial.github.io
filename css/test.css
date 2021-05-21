@@ -215,3 +215,26 @@ body {
     margin-right: auto;
     font-weight: bold;
 }
+
+.messcontain {
+    width: 100%;
+}
+
+.mess textarea,
+.mess input {
+    margin-top: 20px;
+    color: rgb(255, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.mess textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.mess div {
+    text-align: center;
+    display: block;
+}
