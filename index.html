@@ -35,6 +35,29 @@
             <textarea id="contentMess" rows="4" cols="50" name="comment" form="usrform" placeholder="Bạn muốn gửi tới mình điều gì?"></textarea>
         </div>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyBgmIXOk7dVL7eNXTc_2u6-kEKDcUWkyc4",
+            authDomain: "testmessweb.firebaseapp.com",
+            databaseURL: "https://testmessweb-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "testmessweb",
+            storageBucket: "testmessweb.appspot.com",
+            messagingSenderId: "294111638194",
+            appId: "1:294111638194:web:5ae80d3f5d253c75c28fab",
+            measurementId: "G-LKJ62CL7E3"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
     <script src="./js/js.js"></script>
 </body>
 
