@@ -11,7 +11,6 @@ dataRef.child('num').on('value', async function(snap) {
     var num = await snap.val();
     numberMess = num;
     console.log("số tin nhắn" + num);
-    submit1();
     printMess();
 });
 
@@ -60,4 +59,5 @@ function submit() {
     firebase.database().ref("/").update({
         num: numberMess
     });
+    submit1();
 }
