@@ -4,7 +4,7 @@ var contentMess = document.getElementById("contentMess");
 var numberMess = 0;
 console.log("chaohoang");
 var dataRef = firebase.database().ref("/");
-var messsage = document.getElementById("messsage");
+
 // var dbRef = firebase.database().ref("/");
 dataRef.child('num').on('value', async function(snap) {
     // number tin nhan thay doi thi thuc hien cac ham
@@ -14,13 +14,21 @@ dataRef.child('num').on('value', async function(snap) {
     printMess();
 });
 
+function renderRowMess(item) {
+    return `<tr class="rowMess">
+  <td>${item.slice(0,item.indexOf(" said:"))}</td>
+  <td>${item.slice(item.indexOf(" said:")+6,item.length)}</td>
+  </tr>`
+}
+
 function printMess() {
+    tableMess.innerHTML = "";
     // print ra toan bo tin nhan
     for (let index = 0; index <= numberMess; index++) {
         dataRef.child(index).child("mess").get().then((snapshot) => {
             if (snapshot.exists()) {
                 console.log("tin:" + snapshot.val());
-                messsage.innerText = "tin:" + snapshot.val();
+                tableMess.innerHTML += renderRowMess(snapshot.val())
             } else {
                 console.log("No data available");
             }
@@ -60,4 +68,16 @@ function submit() {
         num: numberMess
     });
     submit1();
+}
+// Login
+function validate() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if (username == "admin" && password == "admin") {
+        return true;
+    } else {
+        alert("Sai mật khẩu rồi nhé mày");
+        return false;
+    }
+    return false;
 }
